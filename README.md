@@ -26,3 +26,18 @@ FROM directive is probably the most crucial amongst all others for Dockerfiles. 
 
 
 https://www.digitalocean.com/community/tutorials/docker-explained-using-dockerfiles-to-automate-building-of-images
+
+Steps to run boot app in docker.
+mvn clean
+mvn install
+docker build -t bootdocker .  =>bootdocker is project name.
+note:app name shld be in lower case.
+
+For running Spring boot app,below is the code.
+docker run -p 8999:8999 bootdocker:dockerfile
+
+
+
+
+
+
